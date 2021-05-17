@@ -9,25 +9,44 @@
     <title>Richard Rovinsky | Tribute page</title>
   </head>
   <body>
+    <!-- 
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
+
     <div id="main">
-      <div id="title">
-        <div id="img-div">
-          <img
-            id="image"
-            src="images/richard_rovinsky.jpg"
-            alt="Richard on the picture"
-          />
-          <figcaption id="img-caption">Posing for CV.</figcaption>
-        </div>
-        <div id="tribute-info">
-          <h2>My dream is to become the best at doing one thing!</h2>
-          <p>
-            My only goal is to provide value for everybody that works with me.
+
+        <div id="tribute-info"></div>
+          <h1 id="title">Quick form to see how you liked my page :) </h1>
+          <p id="description">
+            I would like to know your honest opinion and therefor created this 5 minute form to find out how you felt. Please do not hesitate to be as thorough as you want to be. Your opinion could and will help me become better.
           </p>
-          <p>
-            No matter what it takes I will do my best to accomodate your
-            requirements.
-          </p>
+          <form id="survey-form" action="" method="get">
+           <div class="form-input">
+            <label id="name-label" for="name">Enter your name</label>
+            <input type="text" name="name" id="name" required autofocus placeholder="Write your full name" >
+           </div> 
+           <div class="form-input">
+            <label id="email-label" for="email">Enter your email</label>
+            <input type="email" name="email" id="email" required placeholder="example@exaple.com">  
+           </div>
+           <div class="form-input">
+            <label id="number-label" for="number">Enter your number</label>
+            <input type="tel" name="number" id="number" required placeholder="+421---------"> 
+           </div>
+          </form>
           <p>
             You can find more information by following this
             <a
@@ -38,7 +57,7 @@
             >.
           </p>
         </div>
-      </div>
+
     </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
